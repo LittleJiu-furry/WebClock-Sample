@@ -21,10 +21,3 @@ window.setInterval(()=>{
     let timef = tim.getFullYear() + "-" + MM + "-" + dd + "&nbsp;&nbsp;&nbsp;&nbsp;" + hh + ":" + mm + ":" + ss
     document.getElementById("time").innerHTML = timef
 },200)
-
-function mc_in(){
-    document.getElementById("fclock").style.opacity = 1
-}
-function mc_out(){
-    document.getElementById("fclock").style.opacity = 0
-}
