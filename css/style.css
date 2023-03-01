@@ -1,0 +1,136 @@
+body{
+    background-color: #444;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.floatclock{
+    background-color: rgba(255,255,255,.6);
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 750ms ease-in-out,background-color 1s;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.outtime{
+    border: 3px dashed #444;
+    background-color: none;
+    border-radius: 50%;
+    height: 85%;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.indexdot{
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display:flex;
+    z-index: 5;
+}
+
+.ihour{
+    position: absolute;
+    z-index: 4;
+    border-radius: 15px;
+    transform-origin: bottom center;
+    transition: rotate 500ms;
+    top:calc(63.75px - 35px);
+    left:calc(63.75px - 3.5px);
+    height: 35px;
+    width: 7px;
+    background-color: black;
+}
+
+.imin{
+    position: absolute;
+    z-index: 3;
+    border-radius: 15px;
+    transform-origin: bottom center;
+    transition: rotate 500ms;
+    rotate: 30deg;
+    top:calc(63.75px - 42px);
+    left:calc(63.75px - 2.5px);
+    height: 42px;
+    width: 5px;
+    background-color:rgb(80, 150, 255);
+}
+
+.isec{
+    position: absolute;
+    z-index: 2;
+    border-radius: 15px;
+    transform-origin: bottom center;
+    transition: rotate 500ms;
+    rotate: 60deg;
+    top:calc(63.75px - 50px);
+    left:calc(63.75px - 1.5px);
+    height: 50px;
+    width: 3px;
+    background-color:red;
+}
+
+
+.ti{
+    background-color: black;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transform-origin:2.5px 63.75px;
+    position: absolute;
+    rotate: 0deg;
+    top: 0;
+}
+
+.ti:nth-child(1){
+    background-color: red;
+}
+
+.ti:nth-child(2){
+    rotate: 30deg;
+}
+.ti:nth-child(3){
+    rotate: 60deg;
+}
+.ti:nth-child(4){
+    rotate: 90deg;
+    background-color: red;
+}
+.ti:nth-child(5){
+    rotate: 120deg;
+}
+.ti:nth-child(6){
+    rotate: 150deg;
+}
+.ti:nth-child(7){
+    rotate: 180deg;
+    background-color: red;
+}
+.ti:nth-child(8){
+    rotate: 210deg;
+}
+.ti:nth-child(9){
+    rotate: 240deg;
+}
+.ti:nth-child(10){
+    rotate: 270deg;
+    background-color: red;
+}
+.ti:nth-child(11){
+    rotate: 300deg;
+}
+.ti:nth-child(12){
+    rotate: 330deg;
+}
